@@ -1,12 +1,48 @@
 @charset "utf-8";
 
-/*全体*/
-.hidden_box {
-  margin: 2em 0;/*前後の余白*/
-  padding: 0;
+html{
+  color: #000000;
+  background: #ffffff;
+  font-size: 14px;
+  line-height: 1.8;
 }
 
-/*ボタン装飾*/
+*{
+  margin: 0;
+  padding 0;
+  box-sizing: border-dox;
+}
+
+img{
+  max-width: 100%;
+  height: auto;
+}
+
+a{
+  color:#333333;
+}
+
+li{
+  list-style-position: inside;
+}
+
+.mb_s{
+  margin-bottom: 10px;
+}
+
+.mb_m{
+  margin-bottom: 20px;
+}
+
+.mb_l{
+  margin-bottom: 40px;
+}
+
+
+.hidden_box {
+  margin: 2em 0;/*前後の余白*/
+}
+
 .hidden_box label {
   padding: 15px;
   font-weight: bold;
@@ -14,7 +50,6 @@
   cursor :pointer;
 }
 
-/*ボタンホバー時*/
 .hidden_box label:hover {
   background: #efefef;
 }
