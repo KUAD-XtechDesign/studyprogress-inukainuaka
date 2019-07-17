@@ -1,16 +1,23 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="ja" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>nakagawa_index</title>
-    <link rel="stylesheet" href="./assets/css/style.css">
-    <link rel="stylesheet" href="./assets/css/commonc.css">
-    <link rel="stylesheet" href="./assets/css/custom.css">
+    <title>home</title>
+    <link rel="stylesheet" href="./assets/css/common.css">
+    <link rel="stylesheet" href="./assets/css/hidden_box.css">
+    <script>
+        window.onload = function() {
+          setInterval(function() {
+            var dd = new Date();
+            document.getElementById("T1").innerHTML = dd.toLocaleString();
+        }, 1000);
+      }
+      </script>
   </head>
-  <body class="subject_page">
-    <div id="wrapper">
+  <body>
     <header>
-      <nav id="main_nav">
+        現在時刻:<div id="T1"></div>
+      <nav>
         <ul>
           <li><a href="./index.html">Home</a></li>
           <li><a href="./cv.html">CVM</a></li>
@@ -21,13 +28,13 @@
     </header>
 
   <main>
-    <hr>
     <h1>私の学習進捗ページ</h1>
+    <hr class="bar"><div class="year_box">
     <h2>一年次履修科目</h2>
     <div class="hidden_box">
       <label for="firstyear_firsthelf_class">前期授業</label>
       <input type="checkbox" id="firstyear_firsthelf_class"/>
-    <ol class="hidden_show">
+    <ul class="hidden_show">
         <li><a href="./subjects/mediaI.html">メディア概論I</a></li>
         <li><a href="./subjects/startupI.html">スタートアップ概論I</a></li>
         <li><a href="./subjects/swnwI.html">ソフトウェアネットワーク演習I</a></li>
@@ -39,103 +46,103 @@
         <li><a href="./subjects/mondayII.html">クリエイティブWS IIX(ねぶた)</a></li>
         <li><a href="./subjects/arttheory.html">美術論</a></li>
         <li><a href="./subjects/arthistory.html">美術史</a></li>
-        <li><a href="./subjects/sports.html">体育実技I</a></li>
+        <li><a href="./subjects/sportsI.html">体育実技I</a></li>
         <li><a href="./subjects/readingskill.html">リーディングスキル</a></li>
-    </ol>
+    </ul>
     </div>
     <div class="hidden_box">
       <label for="firstyear_latehelf_class">後期授業</label>
       <input type="checkbox" id="firstyear_latehelf_class"/>
-    <ol class="hidden_show">
+    <ul class="hidden_show">
         <li><a href="./subjects/psychology.html">心理学</a></li>
         <li><a href="./subjects/encyclopedia.html">百科学</a></li>
         <li><a href="./subjects/creativestudio.html">創造的工房論</a></li>
-        <li><a href="./subjects/teacher.html">教師論B</a></li>
+        <li><a href="./subjects/teacher.html">教師論</a></li>
         <li><a href="./subjects/law.html">法学/知的財産論</a></li>
         <li><a href="./subjects/expression.html">表現ソフト基礎</a></li>
-        <li><a href="./subjects/startupI.html">スタートアップ概論II</a></li>
+        <li><a href="./subjects/startupII.html">スタートアップ概論II</a></li>
         <li><a href="./subjects/dtII.html">デザイン技法II</a></li>
         <li><a href="./subjects/xtdIII.html">クロステックデザイン演習III</a></li>
         <li><a href="./subjects/dbII.html">デザイン基礎II</a></li>
         <li><a href="./subjects/presentationII.html">プレゼンテーション演習II</a></li>
         <li><a href="./subjects/swnwII.html">ソフトウェアネットワーク演習II</a></li>
-    </ol>
+    </ul>
     </div>
     <div class="hidden_box">
         <label for="firstyear_activity">授業外のあれこれ</label>
         <input type="checkbox" id="firstyear_activity"/>
-    <ol class="hidden_show">
+    <ul class="hidden_show">
         <li>none</li>
-    </ol>
-    </div>
-    <hr>
+    </ul>
+    </div></div>
+    <hr class="bar">
     <h2>二年次履修科目</h2>
     <div class="hidden_box">
       <label for="secondyear_firsthelf_class">前期授業</label>
       <input type="checkbox" id="secondyear_firsthelf_class"/>
-    <ol class="hidden_show">
+    <ul class="hidden_show">
         <li>none</li>
-    </ol>
+    </ul>
     </div>
     <div class="hidden_box">
       <label for="secondyear_latehelf_class">後期授業</label>
     <input type="checkbox" id="secondyear_latehelf_class"/>
-    <ol class="hidden_show">
+    <ul class="hidden_show">
         <li>none</li>
-    </ol>
+    </ul>
     </div>
     <div class="hidden_box">
         <label for="secondyear_activity">授業外のあれこれ</label>
         <input type="checkbox" id="secondyear_activity"/>
-    <ol class="hidden_show">
+    <ul class="hidden_show">
         <li>none</li>
-    </ol>
+    </ul>
     </div>
-    <hr>
+    <hr class="bar">
     <h2>三年次履修科目</h2>
     <div class="hidden_box">
       <label for="thirdyear_firsthelf_class">前期授業</label>
       <input type="checkbox" id="thirdyear_firsthelf_class"/>
-    <ol class="hidden_show">
+    <ul class="hidden_show">
         <li>none</li>
-    </ol>
+    </ul>
     </div>
     <div class="hidden_box">
       <label for="thirdyear_latehelf_class">後期授業</label>
     <input type="checkbox" id="thirdyear_latehelf_class"/>
-    <ol class="hidden_show">
+    <ul class="hidden_show">
         <li>none</li>
-    </ol>
+    </ul>
     </div>
     <div class="hidden_box">
         <label for="thirdyear_activity">授業外のあれこれ</label>
         <input type="checkbox" id="thirdyear_activity"/>
-    <ol class="hidden_show">
+    <ul class="hidden_show">
         <li>none</li>
-    </ol>
+    </ul>
     </div>
-    <hr>
+    <hr class="bar">
     <h2>四年次履修科目</h2>
     <div class="hidden_box">
       <label for="fourthyear_firsthelf_class">前期授業</label>
       <input type="checkbox" id="fourthyear_firsthelf_class"/>
-    <ol class="hidden_show">
+    <ul class="hidden_show">
         <li>none</li>
-    </ol>
+    </ul>
     </div>
     <div class="hidden_box">
       <label for="fourthyear_latehelf_class">後期授業</label>
     <input type="checkbox" id="fourthyear_latehelf_class"/>
-    <ol class="hidden_show">
+    <ul class="hidden_show">
         <li>none</li>
-    </ol>
+    </ul>
     </div>
     <div class="hidden_box">
         <label for="fourthyear_activity">授業外のあれこれ</label>
         <input type="checkbox" id="fourthyear_activity"/>
-    <ol class="hidden_show">
+    <ul class="hidden_show">
         <li>none</li>
-    </ol>
+    </ul>
     </div>
     </main>
 
@@ -145,6 +152,5 @@
             <br>X-tech
         </p>
     </footer>
-
   </body>
 </html>

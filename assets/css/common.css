@@ -1,0 +1,54 @@
+html{
+    color: #000000;
+    background: #FFFFFF;
+    font-size: 14px;
+    line-height: 1.8;
+  }
+  
+  *{
+    margin: 2;
+    padding 0;
+    box-sizing: border-dox;
+  }
+  
+  img{
+    max-width: 100%;
+    height: auto;
+  }
+  
+  a{
+    color:#1B23EE;
+  }
+
+  .bar{
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color:#1B23EE;
+    border: 0;
+  }
+  
+  li{
+    list-style-position: inside;
+  }
+  
+  .mb_s{
+    margin-bottom: 10px;
+  }
+  
+  .mb_m{
+    margin-bottom: 20px;
+  }
+  
+  .mb_l{
+    margin-bottom: 40px;
+  }
+
+.header {
+  position:fixed;
+}
+
+.terminal{
+  background-color: rgba( 0, 0, 0, 0.50 );
+  color: #28FE14;
+}
