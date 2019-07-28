@@ -5,18 +5,9 @@
     <title>home</title>
     <link rel="stylesheet" href="./assets/css/common.css">
     <link rel="stylesheet" href="./assets/css/hidden_box.css">
-    <script>
-        window.onload = function() {
-          setInterval(function() {
-            var dd = new Date();
-            document.getElementById("T1").innerHTML = dd.toLocaleString();
-        }, 1000);
-      }
-      </script>
   </head>
   <body>
     <header>
-        現在時刻:<div id="T1"></div>
       <nav>
         <ul>
           <li><a href="./index.html">Home</a></li>
@@ -29,11 +20,14 @@
 
   <main>
     <h1>私の学習進捗ページ</h1>
-    <hr class="bar"><div class="year_box">
+    <hr class="bar">
     <h2>一年次履修科目</h2>
-    <div class="hidden_box">
+    <div class="infobox_year">
+      <div class="hidden_box">
       <label for="firstyear_firsthelf_class">前期授業</label>
       <input type="checkbox" id="firstyear_firsthelf_class"/>
+    </tr>
+    <tr>
     <ul class="hidden_show">
         <li><a href="./subjects/mediaI.html">メディア概論I</a></li>
         <li><a href="./subjects/startupI.html">スタートアップ概論I</a></li>
@@ -72,11 +66,13 @@
         <label for="firstyear_activity">授業外のあれこれ</label>
         <input type="checkbox" id="firstyear_activity"/>
     <ul class="hidden_show">
-        <li><a id="alert" href="javascript:while(true){alert('何回閉じても無駄ですよ〜')}">不正なプログラム</a></li>
+        <li>none</li>
     </ul>
-    </div></div>
+    </div>
+    </div>
     <hr class="bar">
     <h2>二年次履修科目</h2>
+    <div class="infobox_year">
     <div class="hidden_box">
       <label for="secondyear_firsthelf_class">前期授業</label>
       <input type="checkbox" id="secondyear_firsthelf_class"/>
@@ -98,15 +94,17 @@
         <li>none</li>
     </ul>
     </div>
+    </div>
     <hr class="bar">
     <h2>三年次履修科目</h2>
+    <div class="infobox_year">
     <div class="hidden_box">
       <label for="thirdyear_firsthelf_class">前期授業</label>
       <input type="checkbox" id="thirdyear_firsthelf_class"/>
     <ul class="hidden_show">
         <li>none</li>
     </ul>
-    </div>
+  </div>
     <div class="hidden_box">
       <label for="thirdyear_latehelf_class">後期授業</label>
     <input type="checkbox" id="thirdyear_latehelf_class"/>
@@ -121,8 +119,10 @@
         <li>none</li>
     </ul>
     </div>
+    </div>
     <hr class="bar">
     <h2>四年次履修科目</h2>
+    <div class="infobox_year">
     <div class="hidden_box">
       <label for="fourthyear_firsthelf_class">前期授業</label>
       <input type="checkbox" id="fourthyear_firsthelf_class"/>
@@ -143,6 +143,7 @@
     <ul class="hidden_show">
         <li>none</li>
     </ul>
+    </div>
     </div>
     </main>
 

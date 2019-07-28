@@ -33,6 +33,7 @@
     opacity: 1;
   }
 
-  .year_box{
-    display: inline-block;
+  .infobox_year{
+    height: 300px;
+    overflow: scroll;   /*スクロールバーを表示(※) */
   }
