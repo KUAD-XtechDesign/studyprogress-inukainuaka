@@ -21,7 +21,7 @@ html{
     color:#1B23EE;
   }
 
-  .bar{
+  hr{
     display: block;
     width: 100%;
     height: 1px;
@@ -69,7 +69,7 @@ html{
 	        transition: all 0.5s ease-in-out;
 	border: 3px solid transparent;
 	border-radius: 50%;
-	background-color: #1b2538;
+	background-color: #1B23EE;
 }
 .menu div.menubar {
 	width: 30px;
@@ -102,14 +102,14 @@ html{
 	-webkit-transition: all 0.3s ease-in;
 	        transition: all 0.3s ease-in;
 	text-decoration: none;
-	color: #1b2538;
+	color: #000000;
 	border-bottom: 4px solid transparent;
 	height: 56px;
 	line-height: 2em;
 }
 .menu ul li a:hover {
 	color: #ffffff;
-	background-color: #1b2538;
+	background-color: #1B23EE;
 }
 .menu ul li a:target {
 	border-bottom-color: #1b2538;
@@ -121,7 +121,7 @@ html{
 #cp_navimenuid:checked ~ .menu {
 	width: 100%;
 	height: 60px;
-	border: 3px solid #1b2538;
+	border: 3px solid #1B23EE;
 	border-radius: 5px;
 	background-color: transparent;
 }
