@@ -132,3 +132,10 @@ html{
 #cp_navimenuid:checked ~ .menu > .menubar {
 	display: none;
 }
+
+.hidden_box{
+	float: left;
+	box-sizing: border-box;
+	width: 23%;
+	margin-right: 2%;
+}
