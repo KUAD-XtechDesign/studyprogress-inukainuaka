@@ -28,7 +28,6 @@
     2019/10/23 anzu Ver.0.0.0.1 Pre-Alpha 杏(anzu)生誕
     <blockquote class="twitter-tweet"><p lang="ja" dir="ltr">「杏(anzu)」ちゃん起動した〜良き良き。<br>キャラ設定共に暇な時に出来ること増やしていこう <a href="https://t.co/DSEjWESFvI">pic.twitter.com/DSEjWESFvI</a></p>&mdash; ゆーとりぷしん (@yutrypsin) <a href="https://twitter.com/yutrypsin/status/1186667153165967361?ref_src=twsrc%5Etfw">October 22, 2019</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
     discord.jsにて実装。挨拶など単純なやり取りが可能。
-    <br>「おはよう」,「おやすみ」,「こんにちは」,「こんばんは」,「いってきます(いってらっしゃい)」,「ただいま(おかえり)」
     <hr>
     2019/10/23 anzu Ver.0.1.0.2 Pre-Alpha 自分の名前を呼ばれると反応
     <br>メッセージ内に文字列として杏の名前があると反応。ある程度の表記揺れにも対応。
@@ -53,11 +52,12 @@
     <br><img src="../assets/images/anzuPLAYING.png" alt="">
     <br><img src="../assets/images/anzuWATCHING.png" alt="">
     <br><img src="../assets/images/anzuLISTENING.png" alt="">
+    <br>この機能の制御はソースコード内で行う
     <hr>
     2019/10/28 anzu Ver.1.0.2.8 Alpha ピンパンパンゲームを別モードとして実装
     <br>ピンポンパンゲーム中以外は「ピン」や「ピンポンパン」などのゲームルール内の語彙に反応しない
     <hr>
-    2019/10/28 anzu Ver.1.0.3.9 Alpha 動作確認用に内部変数表示機能の追加
+    2019/10/28 anzu Ver.1.0.3.9 Alpha デバック用に変数表示返答コマンドの追加
     <br>新しい変数を表示するには手動でメッセージ内容を表示する必要あり
     <hr>
     2019/10/28 anzu Ver.1.1.0.10 Alpha メンション付きでモーニングコールの追加
@@ -66,7 +66,7 @@
     <br><img src="../assets/images/anzumorning.png" alt="">
     <br>(遅刻時に「ごめん。授業には間に合いません。今シンガポールに...」の定型文を使い始めたことからの身内ネタ)
     <hr>
-    2019/10/29 anzu Ver.1.2.0.11 Alpha 時刻や日付を教えてくれる機能の追加
+    2019/10/29 anzu Ver.1.2.0.11 Alpha 時刻や日付を教えてくれるコマンドの追加
     <br><blockquote class="twitter-tweet"><p lang="ja" dir="ltr">杏に時刻表示させたら-9時間の時差有ったんだけどglitchのサーバーあるのってイギリス辺りなんかな <a href="https://t.co/oVyUzb1UDr">pic.twitter.com/oVyUzb1UDr</a></p>&mdash; ゆーとりぷしん (@yutrypsin) <a href="https://twitter.com/yutrypsin/status/1189190923596394498?ref_src=twsrc%5Etfw">October 29, 2019</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
     <br><blockquote class="twitter-tweet"><p lang="ja" dir="ltr"><a href="https://twitter.com/hashtag/discordanzu?src=hash&amp;ref_src=twsrc%5Etfw">#discordanzu</a><br>あのままだと0〜9時までを24〜32時と表現する事になるのでその時間帯の表記が正しくなるように修正。<br>ついでにTwitterへのメモにタグを付けることで後で見返しやすいように <a href="https://t.co/oyNidzSJ1q">pic.twitter.com/oyNidzSJ1q</a></p>&mdash; ゆーとりぷしん (@yutrypsin) <a href="https://twitter.com/yutrypsin/status/1189215064894689282?ref_src=twsrc%5Etfw">October 29, 2019</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
     <hr>
@@ -77,10 +77,10 @@
     <br>参考Qiita→<a herf='https://qiita.com/yuzuki_/items/23935e4a49035d313e5e'>リンク</a>
     <br><blockquote class="twitter-tweet"><p lang="ja" dir="ltr"><a href="https://twitter.com/hashtag/discordanzu?src=hash&amp;ref_src=twsrc%5Etfw">#discordanzu</a><br>GASがエラー吐かなくなったので多分常時起動出来るようになりました<br><br>参考Qiita<a href="https://t.co/efaJ0GpaUf">https://t.co/efaJ0GpaUf</a></p>&mdash; ゆーとりぷしん (@yutrypsin) <a href="https://twitter.com/yutrypsin/status/1189499592124944384?ref_src=twsrc%5Etfw">October 30, 2019</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
     <hr>
-    2019/10/30 anzu Ver.2.0.1.13 Alpha 名前付きで褒められると喜ぶ様に
+    2019/10/30 anzu Ver.2.0.1.13 Alpha 名前付きで褒められると喜ぶ様に調整
     <br><img src="../assets/images/anzuerai.png" alt="">
     <hr>
-    2019/10/31 anzu Ver.2.0.2.14 Alpha 他のBOTに反応できる様に
+    2019/10/31 anzu Ver.2.0.2.14 Alpha 他のBOTに反応できる様に調整
     <hr>
     2019/10/31 anzu Ver.2.0.3.15 Alpha ソースコードの整理
     <hr>
@@ -91,18 +91,37 @@
     <br>原因究明が出来なかったが、botのトークンをリジェネレートかつグリッチを新規プロジェクトに移植したら治った。
     <br>その後は安定して動作している。
     <hr>
-    2019/11/01 anzu Ver.2.1.3.16 乱数生成機能の試作
+    2019/11/01 anzu Ver.2.1.3.16 乱数生成コマンドの試作
     <br><img src="../assets/images/anzurandom.png" alt="">
     <hr>
-    2019/11/01 anzu Ver.2.1.4.17 ダイス投げ機能への転用
+    2019/11/01 anzu Ver.2.1.4.17 ダイス投げコマンドへの転用
     <br><img src="../assets/images/anzudaisu.png" alt="">
+    <br>乱数生成コマンドの
     <hr>
     2019/11/01 anzu Ver.2.1.5.18 返答パターンの追加
     <br>「What time is it now?」,「Hey」
     <hr>
-    2019/11/03 anzu Ver.2.1.6.19 返答パターンの追加('付きは複数パターンからのxランダム返答)
-    <br>「滅亡迅雷.netに接続'(0→7)」,「お前を消す方法'(0→5)」,「名前を呼ばれた'(1→6)」
+    2019/11/03 anzu Ver.2.1.6.19 返答パターンの追加(複数パターンからのランダム返答も実装)
     <hr>
+    2019/11/03 コーディング中にanzuが落ちた。
+    <br>何処かの記事で「botが50回再起動するとdiscord側から強制的にトークンを変更される」と言う記述を見た覚えがあったので、Discord Developer Portalからトークンを取り直したところ即復帰した。
+    <br>glitchの仕様上、書き換え時に即再起動する為、この障害とは付き合っていく必要がある。
+    <br>その分即座に反映されると言う点や、トークンが書き変わるのはコーディング中(anzuに手をかけている時)と言う点は有難い。
+    <hr>
+    2019/11/04 anzu Ver.2.1.7.20 時差計算の微修正、及び返答パターンの追加
+    <br>・グリニッジ標準時から時差を足して日本時間を取得する際の処理の追加
+    <br>　グリニッジ標準時が15時〜24時(日本時間翌日の0時〜9時)において
+    <br> 　旧関数-「日付」「時間」のみを変更
+    <br> 　新関数-「日付」「時間」「曜日」を変更かつ、「32日」もしくは「2月31日」「4月31日」「6月31日」「9月31日」「11月31日」、もしくは閏年以外の「2月30日」において「月」「日付」をさらに変更
+    <br><br>・返答パターンの追加「曜日」
+    <hr>
+    2019/11/04 anzu Ver.2.1.8.21 時間取得関数の定期化
+    <br>旧関数-起動時、及び必要時(時間や日付などを聞かれた)に取得
+    <br>新関数-起動時から1/10s間隔で更新
+    <hr>
+    2019/11/04 anzu Ver.2.1.9.22 ダイス投げコマンドの更新
+    <br>ダイスの面数指定がうまく動かなかった為暫定的に100面,10面,6面のみ実装。
+    <br>「[ダイスを投げる回数(1〜9999)]D[ダイスの面の数(100 or 10 or 6)]」のダイスコードを使用
   </main>
 
   <footer>
